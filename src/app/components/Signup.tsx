@@ -3,6 +3,7 @@ import {
   Button,
   Typography,
 } from "@material-tailwind/react";
+import Image from "next/image";
 
 type SignUpProps = {
     signinLink: string;
@@ -128,7 +129,7 @@ export default function Signup ({ signinLink, options, terms, termsLink }: SignU
                                     className="flex items-center gap-2 justify-center shadow-sm hover:shadow-lg cursor-pointer p-3"
                                     fullWidth
                                 >
-                                    <img src="https://logohistory.net/wp-content/uploads/2023/02/Twitter-Log%D0%BE.png" height={32} width={32} alt="" className={`-mr-2 -ml-2`}/>
+                                    <Image src="https://logohistory.net/wp-content/uploads/2023/02/Twitter-Log%D0%BE.png" height={32} width={32} alt="" className={`-mr-2 -ml-2`}/>
                                     <span>Sign in With Twitter</span>
                                 </Button>
                             );

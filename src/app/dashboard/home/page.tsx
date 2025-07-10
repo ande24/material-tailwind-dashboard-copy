@@ -8,11 +8,12 @@ import {
   FaUserFriends,
   FaUserPlus,
 } from "react-icons/fa";
+import { Props as ChartProps } from "react-apexcharts";
 
 import dynamic from "next/dynamic";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
-const chartConfig = {
+const chartConfig: ChartProps = {
   type: "bar",
   height: 215,
   series: [
@@ -26,9 +27,6 @@ const chartConfig = {
       toolbar: {
         show: false,
       },
-    },
-    title: {
-      show: "",
     },
     dataLabels: {
       enabled: false,
@@ -98,8 +96,8 @@ const chartConfig = {
   },
 };
 
-const chartConfig2 = {
-    type: "line",
+const chartConfig2: ChartProps = {
+  type: "line",
   height: 215,
   series: [
     {
@@ -112,9 +110,6 @@ const chartConfig2 = {
       toolbar: {
         show: false,
       },
-    },
-    title: {
-      show: "",
     },
     dataLabels: {
       enabled: false,
@@ -187,8 +182,8 @@ const chartConfig2 = {
   },
 };
 
-const chartConfig3 = {
-  type: "bar",
+const chartConfig3: ChartProps = {
+  type: "bar" as const,
   height: 215,
   series: [
     {
@@ -201,9 +196,6 @@ const chartConfig3 = {
       toolbar: {
         show: false,
       },
-    },
-    title: {
-      show: "",
     },
     dataLabels: {
       enabled: false,

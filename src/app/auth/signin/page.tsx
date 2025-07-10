@@ -1,6 +1,7 @@
 "use client";
 
 import Signin from "@/app/components/Signin";
+import Image from "next/image";
 
 export default function SignIn() {
   return (
@@ -15,8 +16,9 @@ export default function SignIn() {
           termsLink="/auth/signup"
         />
         <div className="w-2/5 h-full hidden lg:block">
-          <img
+          <Image
             src="https://4kwallpapers.com/images/walls/thumbs_2t/8710.jpg"
+            alt="pattern"
             className="h-full w-full object-cover rounded-3xl"
           />
         </div>

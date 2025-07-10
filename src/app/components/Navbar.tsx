@@ -1,8 +1,7 @@
 "use client";
 
 import { Button } from "@material-tailwind/react";
-import { usePathname } from "next/navigation";
-import { JSX, useEffect, useState } from "react";
+import { JSX } from "react";
 
 type NavbarProps = {
     title?: string;

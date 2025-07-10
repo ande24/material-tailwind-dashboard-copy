@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import {
   FaBars,
@@ -13,7 +13,7 @@ import {
   FaTable,
   FaUserCircle,
 } from "react-icons/fa";
-import { Button, Drawer, IconButton } from "@material-tailwind/react";
+import { Button } from "@material-tailwind/react";
 
 import "../globals.css";
 

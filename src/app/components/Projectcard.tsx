@@ -8,6 +8,7 @@ import {
   Tooltip,
   Avatar,
 } from "@material-tailwind/react";
+import Image from "next/image";
 
 type ProjectCardProps = {
     image: string;
@@ -24,7 +25,7 @@ export default function Projectcard ({ image, projectNumber, title, description,
     return (
         <Card className="mt-6 w-full">
             <CardHeader color="blue-gray" className="relative h-56">
-                <img
+                <Image
                     src={image}
                     alt="card-image"
                     className={`h-full w-full object-cover`}

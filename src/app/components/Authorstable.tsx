@@ -10,7 +10,6 @@ import {
   Avatar,
   Tooltip,
 } from "@material-tailwind/react";
-import { FaPen } from "react-icons/fa";
 
 type AuthorsTableProps = {
   head: string[];

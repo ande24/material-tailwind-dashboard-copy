@@ -12,8 +12,7 @@ type ToggleSettingsProps = {
     }[]
 }
 
-export default function ({ sections }: ToggleSettingsProps) {
-
+export default function ToggleSettings ({ sections }: ToggleSettingsProps) {
     return (
         <>
             {sections.map(({ title, options }) => (
