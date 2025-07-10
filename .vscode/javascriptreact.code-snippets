@@ -1,0 +1,12 @@
+{
+	"Print to console": {
+		"prefix": "clog",
+		"body": "console.log(`$1`);",
+		"description": "Log output to console"
+	},
+	"className template string": {
+		"prefix": "clt",
+		"body": "className={`$1`}",
+		"description": "Converts className to template string"
+	},
+}
